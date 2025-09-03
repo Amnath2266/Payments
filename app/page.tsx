@@ -27,33 +27,33 @@ export default function Home() {
 
   return (
     <main style={{ padding: "2rem" }}>
-      <h1>สร้าง PromptPay QR</h1>
+      <h1>ສ້າງ PromptPay QR</h1>
 
       <div style={{ marginBottom: "1rem" }}>
         <label>
-          เบอร์ PromptPay:{" "}
+          ເບີ PromptPay:{" "}
           <input
             type="text"
             value={mobileNumber}
             onChange={(e) => setMobileNumber(e.target.value)}
-            placeholder="เช่น 0812345678"
+            placeholder="ເຊັ່ນ 0812345678"
           />
         </label>
       </div>
 
       <div style={{ marginBottom: "1rem" }}>
         <label>
-          จำนวนเงิน (บาท):{" "}
+          ຈຳນວນເງຶນ (บาท):{" "}
           <input
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder="เช่น 50"
+            placeholder="ເຊັ່ນ 50"
           />
         </label>
       </div>
 
-      <button onClick={generateQR}>สร้าง QR Code</button>
+      <button onClick={generateQR}>ສ້າງ QR Code</button>
 
       {payload && (
         <div style={{ marginTop: "2rem" }}>
